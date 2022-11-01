@@ -50,10 +50,11 @@ const FormPage = () => {
                             <input
                                 className=' pl-0 w-full outline-none border-none'
                                 type='number'
+                                step='0.01'
                                 required
                                 name='Hight'
                                 value={person.hight}
-                                placeholder='Hight'
+                                placeholder='Hight (in meters)'
                                 onChange={(e) => setPerson({ ...person, hight: e.target.value})}
                             />
                         </div>
@@ -61,10 +62,11 @@ const FormPage = () => {
                             <input
                                 className=' pl-0 w-full outline-none border-none'
                                 type='number'
+                                pattern='\d*'
                                 required
                                 name='Age'
                                 value={person.age}
-                                placeholder='Age'
+                                placeholder='Age (in years)'
                                 onChange={(e) => setPerson({ ...person, age: e.target.value})}
                             />
                         </div>

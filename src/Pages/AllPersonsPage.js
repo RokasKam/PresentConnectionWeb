@@ -25,7 +25,7 @@ const AllPersonsPage = () => {
   const itemClickHandler = async (id) => {
     try {
       const res = await axios.get(`${process.env.REACT_APP_API}/${id}`);
-      navigate('Item', { state: { person: res.data } })
+      navigate('Person', { state: { person: res.data } })
     }
     catch (e) {
       console.log(e);

@@ -12,8 +12,8 @@ const PersonPage = () => {
                     <h1 className='text-2xl font-medium text-slate-600 pb-2'>{person.nameSurname}</h1>
                     <p className='text-sm tracking-tight font-light text-slate-400 leading-6'>{person.description}</p>
                     <div className='flex-1'>
-                        <small className='text-blue-400 text-xs pr-2'>Age: {person.age}</small>
-                        <small className='text-blue-400 text-xs pl-2'>Hight: {person.hight}</small>
+                        <small className='text-blue-400 text-xs pr-2'>Age: {person.age} years</small>
+                        <small className='text-blue-400 text-xs pl-2'>Hight: {person.hight} meters</small>
                     </div>
                 </div>
             </div>
