@@ -50,7 +50,7 @@ const FormPage = () => {
                             <input
                                 className=' pl-0 w-full outline-none border-none'
                                 type='number'
-                                step='0.01'
+                                step='.01'
                                 required
                                 name='Hight'
                                 value={person.hight}
